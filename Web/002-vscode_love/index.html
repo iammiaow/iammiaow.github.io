@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小喵同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="小喵同学">
+    <meta name="github" content="https://github.com/WildMeowth/Wild-Love">
+    <meta name="describe" content="不以物喜，不以己悲 ">
+    <link rel="icon" type="image/x-icon" href="https://mew.wang/assets/images/favicon.ico">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/viewer.min.css">
+</head>
+
+<body>
+
+    <!-- ALL -->
+    <div id="Indexbox">
+
+        <!-- 顶部菜单 -->
+        <div class="menu" id="menu">
+            <img src="./favicon.ico" alt="favicon">
+            <ul id="menuUL">
+                <li>
+                    <a href="https://www.mew.wang/" target="_blank">首页(L)</a>
+                </li>
+                <li>
+                    <a href="https://mew.wang/archives/" target="_blank">文章(V)</a>
+                </li>
+                <li>
+                    <a href="https://mew.wang/categories/" target="_blank">归档(E)</a>
+                </li>
+                <li>
+                    <a href="https://mew.wang/aboutme/" target="_blank">关于(O)</a>
+                </li>
+            </ul>
+            <p>sunshine.html</p>
+        </div>
+
+        <!-- 左侧菜单按钮 -->
+        <div class="leftBar">
+            <div class="leftBar-ButtomMe" onclick="MeClick(true)"></div>
+            <div class="leftBar-ButtomMenu" id="leftBar-ButtomMenu" onclick="MenuClick(true)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+            <div class="leftBar-ButtomPages" id="menuPages" onclick="PagesClick(true)"></div>
+        </div>
+
+        <!-- 左侧拉出菜单 我 -->
+        <div class="leftBar-Me" id="leftBar-Me">
+            <div class="leftBar-ButtomClose" onclick="MeClick(false)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+            <div class="img">
+                <img src="https://mew.wang/assets/images/avatar.jpg" alt="头像">
+            </div>
+            <div class="introduction">
+                <h1>小喵同学</h1>
+                <p>一名天朝的代码搬运工。现居杭州，在杭州工作。目前处于学习状态。</p>
+                <p>不以物喜，不以己悲。</p>
+            </div>
+            <div class="connect">
+                <a href="https://www.mew.wang/aboutme/">关于</a>
+            </div>
+        </div>
+
+        <!-- 页面版块1 -->
+        <div class="pages" id="pages">
+
+            <!-- 页面选项卡 -->
+            <div class="pages-title">
+                <div class="pages-title-option pages-title-option-click" id="pages-title-option1"
+                    onclick="pages_title_option_click(1, true)">
+                    <img src="./images/stuck_out_tongue.png" alt="stuck_out_tongue">
+                    <p>hello world.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option2" onclick="pages_title_option_click(2, true)">
+                    <img src="./images/stuck_out_tongue_closed_eyes.png" alt="stuck_out_tongue_closed_eyes">
+                    <p>sunshine.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option3" onclick="pages_title_option_click(3, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>I love you.md</p>
+                </div>
+            </div>
+
+            <!-- 页面 -->
+            <div class="pages-text pages-text-show" id="pages-text1">
+                <div class="pages-text-box">
+                    <h1>你好，我是小喵同学<br />热爱编程。</h1>
+                    <img class="pages-text-box-img" align="center" width="70px"
+                        src="https://mew.wang/assets/images/avatar.jpg" />
+                    <p>&emsp;&emsp;不以物喜，不以己悲</p>
+                </div>
+            </div>
+
+            <div class="pages-text" id="pages-text2">
+                <div class="pages-text-box">
+                    <h1>test2</h1>
+                </div>
+            </div>
+
+            <div class="pages-text" id="pages-text3">
+                <div class="pages-text-box">
+                    <h1>test3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面版块2 -->
+    <div class="pages pages2" id="pages2">
+
+        <!-- 页面选项卡 -->
+        <div class="pages-title pages-title2">
+            <div class="pages-title-option pages-title-option-click">
+                <img src="./images/icecream.png" alt="icecream">
+                <p>My Life.md</p>
+            </div>
+        </div>
+
+        <!-- 页面 -->
+        <div class="pages-text pages-text-show">
+            <div class="pages-text-box pages-text-box2">
+                <h1>我与她</h1>
+                <p>2022-02-22</p>
+                <p>故事开始</p>
+                <div class="pages-text-box-img">
+                    <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
+                    <h6>我们的第一张合影</h6>
+                </div>
+                <a href="https://github.com/WildMeowth/Wild-Love" class="text-a" target="_blank">More?</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="footer" id="footer">
+        <p class="left">&copy; 2021 | BY <a href="https://mew.wang/" target="_blank">SUNSHINE</a></p>
+        <p class="right"><a href="http://mew.wang/" target="_blank">I am your sunshine</a></p>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="./js/N0ts.js"></script>
+    <script src="./js/viewer.min.js"></script>
+    <script src="./js//lovetime.js"></script>
+    <script>resize();</script>
+</body>
+
+</html>
